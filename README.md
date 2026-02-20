@@ -1,7 +1,23 @@
-# Espresso Tracker (PWA v0.2)
+# Lota Espresso Tracker (PWA)
 
-Upload these files to a GitHub repo (root), enable GitHub Pages, then open the Pages URL on mobile and 'Add to Home Screen'.
+A lightweight, offline-ready espresso logging PWA.
 
-- Offline caching via sw.js
-- LocalStorage shot log + week summary
-- Export/Import JSON
+## Run locally
+Because service workers require https (or localhost), run a simple server:
+
+### Option 1 (Python)
+python -m http.server 8000
+
+Open:
+http://localhost:8000
+
+### Option 2 (VSCode)
+Use "Live Server" extension.
+
+## Deploy to GitHub Pages
+- Push this folder to a repo (root).
+- In GitHub: Settings → Pages → Deploy from branch → `main` / root.
+- Open the Pages URL.
+
+## Data
+All shots are saved in `localStorage` on your device.
